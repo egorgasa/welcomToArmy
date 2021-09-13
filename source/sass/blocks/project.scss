@@ -1,0 +1,427 @@
+.description-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.description-wrapper > div > p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #535A60;
+}
+
+.description-wrapper > div > p:first-child {
+  font-family: OpenSans-Bold;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.description-two-wrapper > div > p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+
+  color: #3E3E3E;
+}
+
+.resume-body_main > p {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 160%;
+  color: #535a60;
+  margin-bottom: 20px;
+}
+
+
+.concepts-wrapper > div > p {
+  font-size: 14px;
+  line-height: 140%;
+  color: #535A60;
+}
+
+.resume-body_main p:nth-child(2) {
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+.resume-body__title {
+  grid-area: resume-title;
+  display: flex;
+  align-items: flex-start;
+}
+
+.resume-body__title > p {
+  font-size: 18px;
+  color: #535A60;
+  line-height: 160%;
+}
+
+.concepts-body > p {
+  font-size: 18px;
+  line-height: 140%;
+  color: #535A60;
+}
+
+.morePhoto-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 65px;
+}
+
+.concepts-img__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 78px;
+}
+
+.concepts-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+
+.description-two-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.resume-body__who {
+  grid-area: resume-who;
+  display: flex;
+  align-items: center;
+
+}
+
+.resume-body__who > p {
+  font-size: 18px;
+  line-height: 160%;
+  color: #666666;
+}
+
+.resume-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 100px;
+  grid-template-areas: "resume-img resume-body" "resume-img resume-who" "resume-img resume-title";
+}
+
+
+.resume-wrapper__img {
+  grid-area: resume-img;
+  max-width: 520px;
+}
+
+.resume-body {
+  grid-area: resume-body;
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-thisProject__body > ul > li > p:first-child {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+  color: #999999;
+  margin-bottom: 10px;
+}
+
+.about-thisProject__body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 510px;
+}
+
+.container-project {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  z-index: 2;
+}
+
+.about-thisProject__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*
+.about-thisProject {
+    top: -110px;
+    position: relative;
+}*/
+.about-thisProject__img {
+  position: relative;
+  top: -110px;
+  width: 100%;
+
+}
+
+.about-thisProject__body--nameProject > p {
+  font-family: OpenSans-Bold;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #3E3E3E;
+}
+
+section.big-img {
+  margin: 100px 0;
+}
+
+.about-thisProject {
+  display: flex;
+}
+
+.about-thisProject__body--nameProject {
+  margin-bottom: 65px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.description-two {
+  margin-bottom: 100px;
+}
+
+.resume {
+  margin-bottom: 100px;
+}
+
+.morePhoto {
+  margin-bottom: 100px;
+}
+
+.concepts {
+  margin-bottom: 100px;
+}
+
+.concepts-img {
+  margin-bottom: 100px;
+}
+
+.safety > ul > li {
+  margin-bottom: 10px;
+  list-style: initial;
+  margin-left: 25px;
+}
+
+.about-thisProject__body--nameProject:before {
+  content: '';
+  width: 134px;
+  position: absolute;
+  left: -166px;
+  height: 13px;
+  background: #C9D1D9;
+  margin-bottom: 5px;
+}
+
+.about-thisProject__body > ul > li {
+  margin-bottom: 27px;
+}
+
+.about-thisProject__body > ul > li > p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+  color: #3E3E3E;
+}
+
+
+
+@media (max-width: 1440px) {
+  .resume-wrapper {
+
+    grid-column-gap: 80px;
+  }
+  .about-thisProject__body--nameProject > p {
+    line-height: 100%;
+  }
+  .about-thisProject__body--nameProject:before {
+    width: 100px;
+    left: -106px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .resume-body_main > p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .about-thisProject__body > ul > li {
+    margin-bottom: 15px;
+  }
+
+  .about-thisProject__body--nameProject {
+    margin-bottom: 15px;
+  }
+  .about-thisProject__body--nameProject > p {
+    font-size: 34px;
+    line-height: 100%;
+  }
+  .about-thisProject__body > ul > li > p:first-child {
+    font-size: 14px;
+  }
+  .about-thisProject__body > ul > li > p {
+    font-size: 14px;
+  }
+
+  .container-project {
+    padding-left: 20px !important;
+  }
+
+  .description-wrapper > div > p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .description-wrapper > div > p:first-child {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .safety > ul > li {
+    font-size: 14px;
+    line-height: 150%;
+    color: #3E3E3E;
+  }
+  .description-wrapper {
+    grid-gap: 25px;
+  }
+
+  .description-two-wrapper > div > p {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #535A60;
+  }
+  .concepts-wrapper, .description-two-wrapper {
+    grid-gap: 65px;
+  }
+
+  .concepts-body > p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .concepts, .concepts-img, .description-two, .morePhoto, .resume {
+    margin-bottom: 70px;
+  }
+
+  section.big-img {
+    margin: 70px 0;
+  }
+
+  .concepts-img__wrapper {
+    grid-gap: 42px;
+  }
+
+
+  .resume-body_main > p:nth-child(2) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .resume-body__title > p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .resume-wrapper {
+
+    grid-column-gap: 35px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .resume-wrapper {
+    grid-template-areas: "resume-img resume-body" "resume-img resume-who" "resume-title resume-title";
+    grid-row-gap: 0px;
+  }
+  .resume-body__title {
+    margin-top: 25px;
+  }
+  .resume-body__who > p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .resume-body_main > p {
+    margin-bottom: 20px;
+  }
+  .about-thisProject__body--nameProject > p {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0;
+  }
+
+
+  .safety > p {
+    font-size: 14px !important;
+  }
+
+
+  .concepts, .concepts-img, .description-two, .morePhoto, .resume {
+    margin-bottom: 30px;
+  }
+
+  section.big-img {
+    margin: 60px 0;
+  }
+
+  .concepts-img__wrapper {
+    grid-gap: 36px;
+  }
+  .concepts-wrapper, .description-two-wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+
+  .description-wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+  .description-wrapper > div > p:first-child {
+    padding-bottom: 10px;
+  }
+
+  .morePhoto-wrapper {
+    grid-gap: 25px;
+    grid-template-columns: 1fr;
+  }
+
+  .sectionProject-id:before {
+    width: 40px;
+  }
+
+}
+
+@media(max-width: 425px) {
+  .resume-wrapper {
+    grid-template-areas: "resume-img resume-body" "resume-who resume-who";
+    grid-row-gap: 0;
+  }
+  .resume-body {
+    grid-area: resume-body;
+    display: flex;
+    align-items: center;
+  }
+  .resume-body__who {
+    margin-top: 25px;
+  }
+  .resume-body__title {
+    display: none;
+  }
+  .resume-body_main > p {
+    font-size: 12px;
+    margin: 0;
+
+  }
+  .resume-body__who > p {
+    font-size: 12px;
+  }
+}

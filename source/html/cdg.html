@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @include('general/head.html')
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+@include('components/header.html')
+<main>
+
+
+  <section>
+    <form class="form well ec-form" method="post" role="form" id="ec-form-[[+fid]]" data-fid="[[+fid]]" action="">
+      <h2 class="go__title">Оставить заявку</h2>
+
+      <input type="hidden" name="thread" value="[[+thread]]">
+
+      <div class="form-group ec-antispam">
+        <label for="ec-[[+antispam_field]]-[[+fid]]" class="control-label">[[%ec_fe_message_antismap]]</label>
+        <input type="text" name="[[+antispam_field]]" class="form-control" id="ec-[[+antispam_field]]-[[+fid]]" value="" />
+      </div>
+
+      <input type="text" name="user_name" class="user" id="ec-user_name-[[+fid]]" value="[[+user_name]]" placeholder="Имя*" required>
+      <input type="text" name="user_contacts" class="user phoneMask" id="ec-user_contacts-[[+fid]]" value="[[+user_contacts]]" placeholder="Номер телефона*" required>
+      <input type="text" name="user_service" class="user phoneMask" id="ec-user_contacts-[[+fid]]" value="[[+user_contacts]]" placeholder="Номер телефона*" required>
+      <select name="" id="" class="user">
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+      </select>
+      <textarea type="text" name="text" class="user" rows="5" id="ec-text-[[+fid]]" placeholder="Комментарий">[[+text]]</textarea>
+      <div class="go__comment-button">
+        <input class="red-grt" type="submit" value="Отправить">
+      </div>
+    </form>
+
+  </section>
+
+
+</main>
+@include('components/footer.html')
+</body>
+</html>

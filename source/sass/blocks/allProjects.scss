@@ -1,0 +1,215 @@
+.sectionAge {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1620px;
+}
+
+.sectionProject-id:before {
+  content: '';
+  border: 5px solid #C9D1D9;
+  width: 80px;
+  left: -95px;
+  bottom: 6px;
+  height: 0;
+  margin-bottom: 4px;
+}
+
+
+.hideAge {
+  position: absolute;
+  bottom: 110px;
+}
+
+
+.sectionProject-id > p {
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #535A60;
+  opacity: 0.7;
+  padding-left: 15px;
+
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll {
+  position: relative;
+  display: block;
+}
+
+
+.card {
+  max-width: 420px;
+}
+
+.card {
+  a {
+    p:first-child {
+      font-family: OpenSans-Bold;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #535A60;
+    }
+
+    p:last-child {
+      font-family: OpenSans-Regular;
+      font-size: 18px;
+      line-height: 140%;
+      color: #535A60;
+    }
+  }
+}
+
+.card > a > a {
+  font-size: 18px;
+  line-height: 140%;
+  color: #535A60;
+}
+
+
+.sectionProject {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px 150px;
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sectionProject-id {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 80px;
+  padding-top: 80px;
+  position: relative;
+}
+
+.ALLPROJECTS {
+  margin-bottom: 80px;
+}
+
+.projects-list > li > p {
+  font-size: 18px;
+  line-height: 140%;
+  color: #535A60;
+}
+
+/*
+.scrollBar {
+  position: sticky;
+  right: 70px;
+  top: 290px;
+
+}
+
+.scrollBar > div > div > a:after {
+  content: url("../img/strelka.svg");
+  display: none;
+  transition: 2s;
+  padding-left: 7px;
+}
+
+.scrollBar > div > div > a {
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #999999;
+
+}
+
+.scrollBar > div:hover > div > a:after {
+  display: inline-block;
+  transition: 2s;
+}
+
+.scrollBar > div:hover > div {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #535A60;
+  position: absolute;
+  left: -20px;
+  bottom: 14px;
+  height: 18px;
+}
+
+.scrollBar > div:last-child:hover > div {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #535A60;
+  position: absolute;
+  left: -20px;
+  bottom: 4px;
+  height: 18px;
+}
+
+.scrollBar > div {
+  padding: 10px;
+  transition: 2s;
+  height: 18px;
+  position: relative;
+}
+
+.scrollBar > div:last-child {
+  padding-bottom: 0px;
+}
+
+.scrollBar > div:first-child {
+  padding-top: 0px;
+}
+*/
+
+
+.box {
+  padding-left: 1em;
+  position: sticky;
+  right: 70px;
+  top: 290px;
+}
+
+.item > a {
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.item {
+  transition: margin-left .6s;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item:hover {
+  margin-left: -1em;
+}
+
+.item::after {
+  content: ' ←';
+  transition: all .6s;
+  opacity: 0;
+  padding-left: 5px;
+}
+
+.item:hover::after {
+  opacity: 1;
+}
+
+.item:hover a {
+  font-family: 'OpenSans-Bold';
+  color: #535A60;
+}
